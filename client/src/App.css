@@ -1,0 +1,240 @@
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Watermark */
+#watermark {
+  position: fixed;
+  height: 105px;
+  top: 2rem;
+  right: 4rem;
+  z-index: 2;
+}
+
+/* Search Component */
+.hover-search {
+  position: fixed;
+  top: 4rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+/* Filter Button Group */
+.filter-buttons {
+  position: fixed !important;
+  bottom: 4rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+/* Zoom Button Group */
+.zoom-buttons {
+  position: fixed !important;
+  bottom: 4rem;
+  right: 4rem;
+  z-index: 2;
+}
+
+.table-image td,
+.table-image th {
+  color: white;
+  vertical-align: middle !important;
+}
+
+.table-list td,
+.table-list th {
+  padding: 0 !important;
+}
+
+.table-light {
+  color: rgb(73, 73, 73);
+}
+
+.toast {
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  display: inline-block;
+  margin-left: 50%; /* From parent width */
+  transform: translateX(-50%); /* use self width which can be unknown */
+  -ms-transform: translateX(-50%); /* For IE9 */
+}
+
+.toast-map {
+  position: absolute;
+  z-index: 1;
+  top: 80vh;
+}
+
+.gm-style .gm-style-iw-c {
+  padding-right: 10px !important;
+  padding-bottom: 0px !important;
+  max-width: 500px !important;
+  max-height: 326px !important;
+  min-width: 0px !important;
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+}
+
+.gm-style-iw-a {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+.admin-input-group-prepend {
+  width: 35%; /*adjust as needed*/
+}
+
+.admin-input-group-prepend label {
+  width: 100%;
+  overflow: hidden;
+}
+
+.loading-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  /* It needs a height and a width: */
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader {
+  align-self: center;
+  @media (max-width: 600px) {
+    align-self: auto;
+  }
+}
+
+.location-card {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Override Bootstrap colors with custom palette */
+.btn-primary {
+  background-color: #4d9de0 !important;
+  border-color: #4d9de0 !important;
+}
+
+.btn-primary:hover {
+  background-color: #58b4ff !important;
+  border-color: #58b4ff !important;
+}
+
+.btn-success {
+  background-color: #3bb273 !important;
+  border-color: #3bb273 !important;
+}
+
+.btn-success:hover {
+  background-color: #43ce84 !important;
+  border-color: #43ce84 !important;
+}
+
+/* BURGER MENU */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #ffffff;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
